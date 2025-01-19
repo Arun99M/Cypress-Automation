@@ -34,6 +34,8 @@ describe('End to End ecommerce Test', function () {
         const confirmationPage = cartPage.checkoutItems()
         confirmationPage.submitFormDetails()
         confirmationPage.getAlertMessage().should('contain', 'Success')
+
+        
       
     })
 })
